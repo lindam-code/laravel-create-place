@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 Route::get('/books','BookController@index');
 Route::get('/students','StudentController@index');
+Route::get('/students-handlebars','StudentController@handlebars');
