@@ -61,9 +61,15 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .header_navigation .navigation_menu {
+              display: flex;
+              justify-content: space-between;
+            }
         </style>
     </head>
     <body>
+      @include('partials/header')
+
         @yield('main_content');
     </body>
 </html>

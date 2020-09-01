@@ -16,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/books','BookController@index');
-Route::get('/students','StudentController@index');
-Route::get('/students-handlebars','StudentController@handlebars');
+Route::get('/books','BookController@index')->name('books');
+Route::get('/students','StudentController@index')->name('students');
+Route::get('/students-handlebars','StudentController@handlebars')->name('students-handlebars');
